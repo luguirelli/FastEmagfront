@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<style type="text/css">
+	body {
+		color: #cce2ee;
+		background: #cce2ee;
+		width: 1378px;
+		margin-left: -125px;
+	}
+	.form-control {
+        min-height: 40px;
+		background: #fff;
+		box-shadow: none !important;
+		border-color: #e3e3e3;
+	}
+	.form-control:focus {
+		border-color: #007c92;
+	}
+    .form-control, .btn {        
+        border-radius: 10px;
+    }
+	.login-form {
+		width: 400px;
+		margin: 0 auto;
+		padding: 200px 0 172px;		
+	}
+	.login-form form {
+		color: #7a7a7a;
+		border-radius: 45px;
+    	margin-bottom: 13px;
+        font-size: 13px;
+        font-family: cursive;
+        background: #ececec;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 40px;	
+        position: relative;	
+
+    }
+	.login-form h2 {
+		font-size: 22px;
+        margin: 35px 0 25px;
+    }
+	.login-form .avatar {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -60px;
+		width: 85px;
+		height: 85px;
+		border-radius: 27%;
+		z-index: 9;
+		background: rgba(255, 255, 255, 0.966);
+		padding: 15px;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.login-form .avatar img {
+		width: 105%;
+	}	
+    .login-form input[type="checkbox"] {
+        margin-top: 2px;
+    }
+    .login-form .btn {        
+        font-size: 18px;
+        font-weight: bold;
+        font-family:'Gill Sans';
+        		background: #178ccb;
+		border: none;
+		margin-bottom: 20px;
+    }
+	.login-form .btn:hover, .login-form .btn:focus {
+		background: #007c92;
+        outline: none !important;
+	}    
+	.login-form a {
+		color: #666666;
+		text-decoration: underline;
+    font-family: cursive;
+    
+	}
+	.login-form a:hover {
+		text-decoration: none;
+	}
+	.login-form form a {
+		color: #666666;
+		text-decoration: none;
+    font-family: cursive;
+	}
+	.login-form form a:hover {
+		text-decoration: underline;
+	}
+</style>
+</head>
+<body>
+<div class="login-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<div class="avatar">
+			<img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-icon4-jir2062-por-l.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=7c4323d76cf4eaee1dcb8700f051b57d" alt="Avatar">
+		</div> 
+        <div class="form-group">
+        	<input type="text" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="senha" placeholder="Senha" required="required">
+        </div>        
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
+        </div>
+		<div class="clearfix">
+            <a href="#" class="pull-right">Esqueceu sua senha?</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>               
